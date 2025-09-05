@@ -20,23 +20,26 @@
         visible="false">
         <a-box width="12.5" depth="1" height="30" color="#EF2D5E" position="0 15 0">
 
-          <a-entity animation="property: object3D.scale.y; from: 0.0001; to: 1; delay: 800; dur: 800; easing: easeOutCubic;rotation="-140 0 0" position="0 15 0" scale="1 0.0001 1">
-            <a-box width="12.49" depth=".1" height="30" color="#24CAFF" position="0 15 -.52" shader="flat"></a-box>
-            <a-box width="12.5" depth="1" height="30" color="#EF2D5E" position="0 15 0"></a-box>
+          <a-entity animation="property: object3D.scale.y; from: 0.0001; to: 1; delay: 800; dur: 800; easing: easeOutCubic" rotation="-140 0 0" position="0 15 0" scale="1 0.0001 1">
+            <a-box width="12.49" depth=".1" height="30" color="#EF2D5E" position="0 15 -.52" shader="flat"></a-box>
+            <a-box width="12.5" depth="1" height="30" color="#EF2D5E" position="0 15 0"></a-box> 
           </a-entity>
         </a-box>
       </a-entity>
-                <a-entity animation="property: object3D.scale.y; from: 0.0001; to: 1; delay: 800; dur: 800; easing: easeOutCubic";rotation="-90 0 0" position="0 13 -0" scale="1 0.0001 1" event-set__loaded="visible:true">
-            <a-box width="12.49" depth=".1" height="30" color="#b00e37" position="0 -1 0.52" shader="flat"></a-box>
-            <a-box width="12.5" depth="1" height="30" color="#EF2D5E" position="0 -1 0"></a-box>
-          </a-entity>
-                <a-entity animation="property: object3D.scale.y; from: 0.0001; to: 1; delay: 800; dur: 800; easing: easeOutCubic";rotation="140 -240 0" position="-30 13 2" scale="1 0.0001 1" event-set__loaded="visible:true">
-            <a-box width="12.49" depth=".1" height="14" color="#15317d" position="0 15 0" shader="flat"></a-box>
-            <a-box width="12.5" depth="1" height="14" color="#15317d" position="0 -1 0"></a-box>
+          <a-entity animation="property: object3D.scale.y; from: 0.0001; to: 1; delay: 800; dur: 800; easing: easeOutCubic" rotation="-90 0 0" position="0 13 -0" scale="1 0.0001 1" event-set__loaded="visible:true">
+            <a-box width="12.49" depth=".1" height="10.68" color="#F2E646" position="0 -1 0.52" shader="flat"></a-box>
+            <a-box width="12.49" depth="1" height="10.68" color="#EF2D5E" position="0 -1 0"></a-box>
           </a-entity>
     <a-entity>
-      <a-plane animation="property: object3D.position.y; to: 0 ;dur: 1600; easing: easeOutCubic" width="30" height="30" color="#249889" rotation="-90 0 0" position="0 -40 3"></a-plane>
+      <a-plane animation="property: object3D.position.y; to: 0 ;dur: 1600; easing: easeOutCubic" width="35" height="35" color="#249889" rotation="-90 0 0" position="0 -100 3"></a-plane>
     </a-entity>
+
+    <a-entity>
+      <a-box animation="property: object3D.position.z; to: 340; dur: 36000; loop: true" position="-50 35 0" color="white" opacity="0.25" width="8" depth="10" height="6"></a-box>
+        <a-box animation="property: object3D.position.z; to: 120; delay:0; dur: 48000; easing: linear; loop: true" position="-100 80 -15" color="white" opacity="0.65" width="10" depth="10" height="4"></a-box>
+    </a-entity>
+    <a-light type="directional" color="#fff" intensity="0.45" position="4 2 1"></a-light>
+    <a-light type="ambient" color="#A8A8A8"></a-light>
 <a-scene>
     </body>
 </html>
